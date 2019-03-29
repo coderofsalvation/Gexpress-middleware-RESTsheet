@@ -16,11 +16,11 @@ app.use( person )
 
 | url | will return |
 |-|-|
-|GET `https://{your-script-url}/?path=/person`                     | all rows from 'persons'-sheettab             |
-|GET `https://{your-script-url}/?path=/person/123`                 | get row with value '123' in column '#'        |
-|DELETE `https://{your-script-url}/?path=/person/123&method=DELETE`| remove row with value '123' in column '#'        |
-|POST `https://{your-script-url}/?path=/person&method=POST` {...}  | append (person) jsondata to 'persons'-sheettab |
-|PUT `https://{your-script-url}/?path=/person/123&method=PUT` {...}| update person '123' with jsondata            |
+|GET `https://{scripturl}/?path=/person`                     | all rows from 'persons'-sheettab             |
+|GET `https://{scripturl}/?path=/person/123`                 | get row with value '123' in column '#'        |
+|DELETE `https://{scripturl}/?path=/person/123&method=DELETE`| remove row with value '123' in column '#'        |
+|POST `https://{scripturl}/?path=/person&method=POST` {...}  | append (person) jsondata to 'persons'-sheettab |
+|PUT `https://{scripturl}/?path=/person/123&method=PUT` {...}| update person '123' with jsondata            |
 
 > IMPORTANT: include [Gexpress](https://github.com/coderofsalvation/Gexpress) and the __latest version__ of this library (`McC5ha7ENyUgeP62iQ1o5n3yo9jV2Cq2v`)
 
@@ -35,7 +35,7 @@ app.use( person )
 | offset | 0         | skip n items from result, for pagination purposes |
 | order | 'date_modify DESC' | sort results on date_modify column |
 
-> GET `https://{your-script-url}/?path=/person&limit=5&offset=0&order=date_modify%20DESC&query={"active":1}` 
+> GET `https://{scripturl}/?path=/person&limit=5&offset=0&order=date_modify%20DESC&query={"active":1}` 
 
 ## Advanced usage
 
