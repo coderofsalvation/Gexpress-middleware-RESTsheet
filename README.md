@@ -5,6 +5,7 @@
 ## Usage
 
 ```
+var app      = new Gexpress.App() // see https://github.com/coderofsalvation/Gexpress
 var sheet    = SpreadsheetApp.openById('1AImZywpGLsOWZafgyHUHBo')
 var person   = GexpressTamotsu.middleware('/person', {sheet:sheet,tab:'persons'})
 
