@@ -75,3 +75,16 @@ app.use( person )
                
     }             
 ```             
+
+## Todo 
+
+* ✓ GET /foo
+* ✓ GET /foo/:id
+* ◔ POST /foo
+* ◔ PUT /foo/:id
+* ◔ DELETE /foo/:id
+* ✓ support for 'query'-arg 
+* ✓ support for 'limit'-arg 
+* ✓ support for 'order'-arg 
+* ✓ support for 'offset'-arg 
+* ❍ more tests
