@@ -16,10 +16,10 @@ app.use( person )
 | url | will return |
 |-|-|
 |GET `https://{your-script-url}/?path=/person`                     | all rows from 'persons'-sheettab             |
-|GET `https://{your-script-url}/?path=/person/123`                 | person with value '123' in column '#'        |
-|DELETE `https://{your-script-url}/?path=/person/123&method=DELETE`| person with value '123' in column '#'        |
-|POST `https://{your-script-url}/?path=/person&method=POST`        | append (person) jsondata to 'persons'-sheettab |
-|PUT `https://{your-script-url}/?path=/person/123&method=PUT`      | update person '123' with jsondata            |
+|GET `https://{your-script-url}/?path=/person/123`                 | get row with value '123' in column '#'        |
+|DELETE `https://{your-script-url}/?path=/person/123&method=DELETE`| remove row with value '123' in column '#'        |
+|POST `https://{your-script-url}/?path=/person&method=POST` {...}  | append (person) jsondata to 'persons'-sheettab |
+|PUT `https://{your-script-url}/?path=/person/123&method=PUT` {...}| update person '123' with jsondata            |
 
 ## querying the sheet
 
