@@ -1,0 +1,11 @@
+{
+  "timeZone": "Europe/Paris",
+  "dependencies": {
+    "libraries": [{
+      "userSymbol": "Tamotsu",
+      "libraryId": "1OiJIgWlrg_DFHFYX_SoaEzhFJPCmwbbfEHEqYEfLEEhKRloTNVJ-3U4s",
+      "version": "30"
+    }]
+  },
+  "exceptionLogging": "STACKDRIVER"
+}
