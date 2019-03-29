@@ -1,6 +1,6 @@
 <img src="https://github.com/coderofsalvation/Gexpress/raw/master/gexpress.png"/>
 
-Expose spreadsheet using REST endpoints
+[Gexpress](https://github.com/coderofsalvation/Gexpress) middleware to expose spreadsheet as REST endpoints
 
 ## Usage
 
