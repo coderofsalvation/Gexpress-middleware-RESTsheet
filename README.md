@@ -55,7 +55,7 @@ The Gexpress docs automatically generate a JS client, so here's how to extend it
     )
 ```
 
-> Voila, now you can do the following after including `<script src="https://script.google.com/{SCRIPTID}/exec?path=/client.js"></script>` in your html
+> Voila, now you can do the following after including `<script src="https://script.google.com/{SCRIPTID}/exec?path=/client.js"></script>` in your html:
 
 ```
     backend.user.get('l2k3l').then( console.dir ).catch( console.error )
