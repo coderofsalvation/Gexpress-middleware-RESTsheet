@@ -39,7 +39,7 @@ app.use( person )
 
 ## Generate JS Client
 
-The Gexpress docs automatically generate a JS client, so here's how to extend it:
+[Gexpress](https://github.com/coderofsalvation/Gexpress) automatically generate a JS client, so here's how to extend it:
 
 ```
     function middleware_database(){
