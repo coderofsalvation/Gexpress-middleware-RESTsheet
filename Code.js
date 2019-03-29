@@ -3,7 +3,7 @@
 
 ```
 var sheet    = SpreadsheetApp.openById('1AImZywpGLsOWZafgyHUHBo')
-var person   = GexpressTamotsu.middleware('/person', {sheet:sheet,tab:'persons',order:'date_modify DESC'})
+var person   = GexpressTamotsu.middleware('/person', {sheet:sheet,tab:'persons'})
 
 app.use( person )
 ```
