@@ -12,6 +12,10 @@ var person   = GexpressTamotsu.middleware('/person', {sheet:sheet,tab:'persons'}
 app.use( person )
 ```
 
+> Include [Gexpress](https://github.com/coderofsalvation/Gexpress) and the __latest version__ of this library (`McC5ha7ENyUgeP62iQ1o5n3yo9jV2Cq2v`)
+
+<img src="include.gif"/>
+
 > Voila! now the following urls are exposed:
 
 | url | will return |
