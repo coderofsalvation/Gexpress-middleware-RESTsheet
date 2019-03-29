@@ -30,12 +30,12 @@ app.use( person )
 
 | query param | example | info |
 |-|-|-|
-| query | {active:1} | mongodb-ish query to match candidates in sheet |
-| limit | 4          | return max 4 results |
-| offset | 0         | skip n items from result, for pagination purposes |
-| order | 'date_modify DESC' | sort results on date_modify column |
+| ?query=.. | {active:1} | mongodb-ish query to match candidates in sheet |
+| ?limit=.. | 4          | return max 4 results |
+| ?offset=.. | 0         | skip n items from result, for pagination purposes |
+| ?order=.. | 'date_modify DESC' | sort results on date_modify column |
 
-> GET `https://{scripturl}/?path=/person&limit=5&offset=0&order=date_modify%20DESC&query={"active":1}` 
+> EXAMPLE: `https://{scripturl}/?path=/person&limit=5&offset=0&order=date_modify%20DESC&query={"active":1}` 
 
 ## Generate JS Client
 
