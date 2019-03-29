@@ -48,7 +48,7 @@ app.use( person )
     )
 ```
 
-> Voila, now you can do the following after including `<script src="https://script.google.com/{SCRIPTID}/exec?path=/client.js"></script>` in your html:
+> Voila, now you can run the following in your __jquery/vue/react/whatever__-app after including `<script src="https://script.google.com/{SCRIPTID}/exec?path=/client.js"></script>` in your html:
 
 ```
     backend.user.get('l2k3l').then( console.dir ).catch( console.error )
