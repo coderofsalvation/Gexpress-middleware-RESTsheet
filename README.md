@@ -42,15 +42,8 @@ app.use( person )
 [Gexpress](https://github.com/coderofsalvation/Gexpress) automatically generate a JS client, so here's how to extend it:
 
 ```
-    function middleware_database(){
-        var person   = GexpressTamotsu.middleware('/person', {sheet:sheet,tab:'persons'})
-        app.use( person )
-        return person.generateClientCode() // + foo.generateClientCode()
-    }
-
-    var dbclientcode = middleware_database()
     app.get('/client.js', app.client(function(code){
-        return code + dbclientcode
+        return code + person.generateClientCode() 
       }) 
     )
 ```
