@@ -12,10 +12,6 @@ var person   = GexpressTamotsu.middleware('/person', {sheet:sheet,tab:'persons'}
 app.use( person )
 ```
 
-> Include [Gexpress](https://github.com/coderofsalvation/Gexpress) and the __latest version__ of this library (`McC5ha7ENyUgeP62iQ1o5n3yo9jV2Cq2v`)
-
-<img src="include.gif"/>
-
 > Voila! now the following urls are exposed:
 
 | url | will return |
@@ -25,6 +21,10 @@ app.use( person )
 |DELETE `https://{your-script-url}/?path=/person/123&method=DELETE`| remove row with value '123' in column '#'        |
 |POST `https://{your-script-url}/?path=/person&method=POST` {...}  | append (person) jsondata to 'persons'-sheettab |
 |PUT `https://{your-script-url}/?path=/person/123&method=PUT` {...}| update person '123' with jsondata            |
+
+> IMPORTANT: include [Gexpress](https://github.com/coderofsalvation/Gexpress) and the __latest version__ of this library (`McC5ha7ENyUgeP62iQ1o5n3yo9jV2Cq2v`)
+
+<center><img src="include.gif"/></center>
 
 ## querying the sheet
 
