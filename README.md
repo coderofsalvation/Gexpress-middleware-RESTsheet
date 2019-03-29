@@ -37,7 +37,7 @@ app.use( person )
 
 > EXAMPLE: `https://{scripturl}/?path=/person&limit=5&offset=0&order=date_modify%20DESC&query={"active":1}` 
 
-## Generate JS Client
+## Generate JS Client (browser+node.js)
 
 [Gexpress](https://github.com/coderofsalvation/Gexpress) automatically generate a JS client, so here's how to extend it:
 
