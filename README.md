@@ -37,6 +37,38 @@ app.use( person )
 
 > GET `https://{scripturl}/?path=/person&limit=5&offset=0&order=date_modify%20DESC&query={"active":1}` 
 
+## Generate JS Client
+
+The Gexpress docs automatically generate a JS client, so here's how to extend it:
+
+```
+    function middleware_database(){
+        var person   = GexpressTamotsu.middleware('/person', {sheet:sheet,tab:'persons'})
+        app.use( person )
+        return person.generateClientCode() // + foo.generateClientCode()
+    }
+
+    var dbclientcode = middleware_database()
+    app.get('/client.js', app.client(function(code){
+        return code + dbclientcode
+      }) 
+    )
+```
+
+> Voila, now you can do the following after including `<script src="https://script.google.com/{SCRIPTID}/exec?path=/client.js"></script>` in your html
+
+```
+    backend.user.get('l2k3l').then( console.dir ).catch( console.error )
+    backend.user.delete('l2k3l').then( console.dir ).catch( console.error )
+    backend.user.put('l2k3l',{...data..}).then( console.dir ).catch( console.error )
+    backend.user.post({...data..}).then( console.dir ).catch( console.error )
+
+    // the following assumes columns '#', 'date_created' and 'active' to exist in your spreadsheet
+    backend.user.find({active:1},{offset:0,limit:10,order:'date_created DESC'}).then( console.dir ).catch( console.error )
+```
+
+
+
 ## Advanced usage
 
 > NOTE: this middleware is based on [tamotsu](https://github.com/itmammoth/Tamotsu)
