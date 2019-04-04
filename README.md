@@ -26,6 +26,12 @@ app.use( person )
 
 <center><img src="include.gif"/></center>
 
+Here's how to setup the sheet:
+
+<center><img src="sheet.gif"/></center>
+
+> NOTE: make sure to format the '#'-column as 'plain text'. Also extract the sheet id from the url (https://docs.google.com/spreadsheets/d/{id}/edit#gid=0 and put it into the openById(..)-call.
+
 ## querying the sheet
 
 | query param | example | info |
