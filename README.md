@@ -35,6 +35,8 @@ Setup the sheet:
 
 > NOTE: make sure to format the '#'-column as 'plain text'. Also extract the sheet id from the url (https://docs.google.com/spreadsheets/d/{id}/edit#gid=0 and put it into the openById(..)-call.
 
+> OPTIONAL: you can put json-strings in columns for nested data (it will be parsed automatically).
+
 ## querying the sheet
 
 | query param | example | info |
@@ -125,4 +127,5 @@ Setup the sheet:
 * ✓ support for 'limit'-arg 
 * ✓ support for 'order'-arg 
 * ✓ support for 'offset'-arg 
+* ✓ automatically parse JSON in columns 
 * ◔ more tests
