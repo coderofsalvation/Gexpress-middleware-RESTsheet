@@ -24,7 +24,8 @@ app.use( person )
 
 ## Install
 
-Include [Gexpress](https://github.com/coderofsalvation/Gexpress) and the __latest version__ of this library (`1u4tNXyogsenLfbzOYk7JCyxzgxvJSo2GtdmI3pfUKWtodYIyWMXQ89NX`)
+1. Include the __latest version__ of this library (`1u4tNXyogsenLfbzOYk7JCyxzgxvJSo2GtdmI3pfUKWtodYIyWMXQ89NX`) (see screenshot)
+2. Include [Gexpress](https://github.com/coderofsalvation/Gexpress) in similar fashion
 
 <center><img src="include.gif"/></center>
 
