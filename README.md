@@ -22,11 +22,13 @@ app.use( person )
 |POST `https://{scripturl}/?path=/person&method=POST` {...}  | append (person) jsondata to 'persons'-sheettab |
 |PUT `https://{scripturl}/?path=/person/123&method=PUT` {...}| update person '123' with jsondata            |
 
-> IMPORTANT: include [Gexpress](https://github.com/coderofsalvation/Gexpress) and the __latest version__ of this library (`1u4tNXyogsenLfbzOYk7JCyxzgxvJSo2GtdmI3pfUKWtodYIyWMXQ89NX`)
+## Install
+
+Include [Gexpress](https://github.com/coderofsalvation/Gexpress) and the __latest version__ of this library (`1u4tNXyogsenLfbzOYk7JCyxzgxvJSo2GtdmI3pfUKWtodYIyWMXQ89NX`)
 
 <center><img src="include.gif"/></center>
 
-Here's how to setup the sheet:
+Setup the sheet:
 
 <center><img src="sheet.gif"/></center>
 
