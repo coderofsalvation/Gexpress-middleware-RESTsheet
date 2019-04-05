@@ -124,32 +124,43 @@ This would be a basic query:
 
 Which could be extended further like this:
 
-> `https://{scripturl}/?path=/person&limit=5&offset=0&order=[-date_modify,price]&query={"active":1}` 
+> `https://{scripturl}/?path=/person&limit=5&offset=0&order=[-date_modify,price]&query={"$or":[{price:5},{name:"foo"}]}` 
 
 Ordering can take place using an array of properties (with/without a minus, to indicate ASC/DESC).
 
-|Query Comparison operators | | |
-|-|-|-|
-| | Greater than| $gt |
-| | Greater Equal than| $gte |
-| | Less than| $lt |
-| | Less Equal than| $lte |
-| | Strict equality| $eq |
-| | Strict inequality| $ne |
-| Text matching operators | | |
-| | Like| $like |
-| | Not like| $nlike |
-| | RegExp| $regex |
-| Subset operator | | |
-| | In| $in |
-| | Not in| $nin |
-| Logical operators | | |
-| | And| $and |
-| | Or| $or |
-| | Nor| $nor |
-| | Not| $not |
+#### Query Comparison operators 
 
-> For more info see [mongoqueries](https://docs.mongodb.com/manual/tutorial/query-documents/)
+|-|-|-|
+| Greater than| $gt |
+| Greater Equal than| $gte |
+| Less than| $lt |
+| Less Equal than| $lte |
+| Strict equality| $eq |
+| Strict inequality| $ne |
+
+
+#### Query Text matching operators
+
+|-|-|-|
+| Like| $like |
+| Not like| $nlike |
+| RegExp| $regex |
+
+#### Query Subset operator
+
+|-|-|-|
+| In| $in |
+| Not in| $nin |
+
+#### Query Logical operators
+
+|-|-|-|
+| And| $and |
+| Or| $or |
+| Nor| $nor |
+| Not| $not |
+
+> For more info see [mongoqueries](https://docs.mongodb.com/manual/tutorial/query-documents/). To convert searchterms to mongoqueries see [human-search-mongoquery](https://www.npmjs.com/package/human-search-mongoquery)
 
 ## Todo 
 
