@@ -157,8 +157,6 @@ Ordering can take place using an array of properties (with/without a minus, to i
 
 #### Query Logical operators
 
-| | |
-|-|-|
 | And| $and |
 | Or| $or |
 | Nor| $nor |
