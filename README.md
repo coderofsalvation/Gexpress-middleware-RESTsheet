@@ -157,12 +157,14 @@ Ordering can take place using an array of properties (with/without a minus, to i
 
 #### Query Logical operators
 
+| | |
+|-|-|
 | And| $and |
 | Or| $or |
 | Nor| $nor |
 | Not| $not |
 
-> For more info see [mongoqueries](https://docs.mongodb.com/manual/tutorial/query-documents/). To convert searchterms to mongoqueries see [human-search-mongoquery](https://www.npmjs.com/package/human-search-mongoquery)
+> For detailed usage see [mongoqueries](https://docs.mongodb.com/manual/tutorial/query-documents/). To convert searchterms to mongoqueries see [human-search-mongoquery](https://www.npmjs.com/package/human-search-mongoquery)
 
 ## Todo 
 
