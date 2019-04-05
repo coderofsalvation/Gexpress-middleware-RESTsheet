@@ -46,7 +46,7 @@ Setup the sheet:
 | ?offset=.. | 0         | skip n items from result, for pagination purposes |
 | ?order=.. | 'date_modify DESC' | sort results on date_modify column |
 
-> EXAMPLE: `https://{scripturl}/?path=/person&limit=5&offset=0&order=date_modify%20DESC&query={"active":1}` 
+> EXAMPLE: `https://{scripturl}/?path=/person&limit=5&offset=0&order=[date_modify]&query={"active":1}` 
 
 ## Generate JS Client (browser+node.js)
 
@@ -115,6 +115,41 @@ Setup the sheet:
                
     }             
 ```             
+
+## Mongoquery Support + multiple ordering
+
+This would be a basic query:
+
+> `https://{scripturl}/?path=/person&limit=5&offset=0&order=[date_modify]&query={"active":1}` 
+
+Which could be extended further like this:
+
+> `https://{scripturl}/?path=/person&limit=5&offset=0&order=[-date_modify,price]&query={"active":1}` 
+
+Ordering can take place using an array of properties (with/without a minus, to indicate ASC/DESC).
+
+|Query Comparison operators | | |
+|-|-|-|
+| | Greater than| $gt |
+| | Greater Equal than| $gte |
+| | Less than| $lt |
+| | Less Equal than| $lte |
+| | Strict equality| $eq |
+| | Strict inequality| $ne |
+| Text matching operators | | |
+| | Like| $like |
+| | Not like| $nlike |
+| | RegExp| $regex |
+| Subset operator | | |
+| | In| $in |
+| | Not in| $nin |
+| Logical operators | | |
+| | And| $and |
+| | Or| $or |
+| | Nor| $nor |
+| | Not| $not |
+
+> For more info see [mongoqueries](https://docs.mongodb.com/manual/tutorial/query-documents/)
 
 ## Todo 
 
