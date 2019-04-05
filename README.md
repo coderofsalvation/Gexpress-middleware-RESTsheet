@@ -178,4 +178,6 @@ Ordering can take place using an array of properties (with/without a minus, to i
 * ✓ support for 'order'-arg 
 * ✓ support for 'offset'-arg 
 * ✓ automatically parse JSON in columns 
+* ✓ added mongoquery support 
+* ✓ added multiple orderby support 
 * ◔ more tests
