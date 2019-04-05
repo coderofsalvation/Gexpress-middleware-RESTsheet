@@ -130,6 +130,7 @@ Ordering can take place using an array of properties (with/without a minus, to i
 
 #### Query Comparison operators 
 
+| | |
 |-|-|
 | Greater than| $gt |
 | Greater Equal than| $gte |
@@ -141,6 +142,7 @@ Ordering can take place using an array of properties (with/without a minus, to i
 
 #### Query Text matching operators
 
+| | |
 |-|-|
 | Like| $like |
 | Not like| $nlike |
@@ -148,12 +150,14 @@ Ordering can take place using an array of properties (with/without a minus, to i
 
 #### Query Subset operator
 
+| | |
 |-|-|
 | In| $in |
 | Not in| $nin |
 
 #### Query Logical operators
 
+| | |
 |-|-|
 | And| $and |
 | Or| $or |
