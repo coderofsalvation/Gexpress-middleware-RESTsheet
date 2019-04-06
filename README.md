@@ -62,13 +62,13 @@ Setup the sheet:
 > Voila, now you can run the following in your __jquery/vue/react/whatever__-app after including `<script src="https://script.google.com/{SCRIPTID}/exec?path=/client.js"></script>` in your html:
 
 ```
-    backend.user.get('l2k3l').then( console.dir ).catch( console.error )
-    backend.user.delete('l2k3l').then( console.dir ).catch( console.error )
-    backend.user.put('l2k3l',{...data..}).then( console.dir ).catch( console.error )
-    backend.user.post({...data..}).then( console.dir ).catch( console.error )
+    gclient.user.get('l2k3l').then( console.dir ).catch( console.error )
+    gclient.user.delete('l2k3l').then( console.dir ).catch( console.error )
+    gclient.user.put('l2k3l',{...data..}).then( console.dir ).catch( console.error )
+    gclient.user.post({...data..}).then( console.dir ).catch( console.error )
 
     // the following assumes columns '#', 'date_created' and 'active' to exist in your spreadsheet
-    backend.user.find({active:1},{offset:0,limit:10,order:'date_created DESC'}).then( console.dir ).catch( console.error )
+    gclient.user.find({active:1},{offset:0,limit:10,order:['date_created']}).then( console.dir ).catch( console.error )
 ```
 
 
@@ -83,7 +83,7 @@ Setup the sheet:
       tab:'foo',
       query: {active:1},        // default 'where'-query
       limit: 25,                // default limit on .all() results
-      order: 'date_modify DESC' // default order on .all() results
+      order: ['date_modify']    // default order on .all() results
     }        
 
     opts.tamotsu = {    // generated output properties             
@@ -124,9 +124,9 @@ This would be a basic query:
 
 Which could be extended further like this:
 
-> `https://{scripturl}/?path=/person&limit=5&offset=0&order=[-date_modify,price]&query={"$or":[{price:5},{name:"foo"}]}` 
+> `https://{scripturl}/?path=/person&limit=5&offset=0&order=['-date_modify','price']&query={"$or":[{price:5},{name:"foo"}]}` 
 
-Ordering can take place using an array of properties (with/without a minus, to indicate ASC/DESC).
+As you can see `['-date_modify','price']`: ordering can take place using an array of properties (the minus-sign flips between ASC/DESC).
 
 #### Query Comparison operators 
 
