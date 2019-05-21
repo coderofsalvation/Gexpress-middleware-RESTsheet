@@ -92,7 +92,7 @@ Setup the sheet:
       }
     }
 
-    app.use( GexpressTamotsu.middleware('/foo',opts ) )
+    var person = GexpressTamotsu.middleware('/foo',opts )
                
     // lets hook into GET /person
     person.get = function(req,res,handler){
@@ -114,6 +114,8 @@ Setup the sheet:
        }else return handler()
                
     }             
+
+    app.use(person)
 ```             
 
 ## Mongoquery Support + multiple ordering
